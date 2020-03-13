@@ -16,8 +16,14 @@ while(True):
     
     for (x, y, w, h) in faces:
         cv2.rectangle(img, (x-50, y-50), (x+w+50, y+h+50), (255, 255, 0), 2)
+        
+    scale_percent = 60 # percent of original size
+    width = int(img.shape[1] * scale_percent / 100)
+    height = int(img.shape[0] * scale_percent / 100)
+    dim = (width, height)
+    resized = cv2.resize(img, dim, interpolation = cv2.INTER_AREA) 
    
-    cv2.imshow('frame', img)
+    cv2.imshow('frame', resized)
 
     if cv2.waitKey(1) & 0xFF==ord('q'):
         break
