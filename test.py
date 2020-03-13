@@ -20,6 +20,9 @@ img=img[y-100:y+h+100,x-100:x+w+100]
 
 cv2.imshow('frame', img)
 
+cv2.imwrite('one.jpg',img)
+
+
 cv2.waitKey(10000)
 
 
