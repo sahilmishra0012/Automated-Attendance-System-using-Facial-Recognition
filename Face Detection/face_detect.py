@@ -6,10 +6,11 @@ from skimage.transform import resize
 
 def extract_face(image_path,image_size,margin):
     img=cv2.imread(image_path)
+    
 
-    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Face Detection/haarcascade_frontalface_default.xml')
         
-    faces = face_cascade.detectMultiScale(img,scaleFactor=1.1,minNeighbors=5,minSize=(30, 30),flags = cv2.CASCADE_SCALE_IMAGE)
+    faces = face_cascade.detectMultiScale(img, 1.3, 5)
     x=faces[0][0]
     y=faces[0][1]
     w=faces[0][2]

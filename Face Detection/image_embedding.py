@@ -13,15 +13,16 @@ import face_detect
 import image_preprocess
 
 def generate_image_encoding(path):
-
-    image_dir_basepath = '/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Dataset/Images'
+    
+    image_dir_basepath = path
 
     model_path = '/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/model/keras/model/facenet_keras.h5'
     model = load_model(model_path)
 
-    data = {}
     image_dirpath = image_dir_basepath
     image_filepaths = [os.path.join(image_dirpath, f) for f in os.listdir(image_dirpath)]
+    
+    print("\n\n\n\n\n"+str(image_filepaths)+"\n\n\n\n\n")
     embs = image_preprocess.calc_embs(image_filepaths,model)
     print(embs[0])
     return embs[0]
