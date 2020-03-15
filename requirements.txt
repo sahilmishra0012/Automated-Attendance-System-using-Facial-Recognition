@@ -163,7 +163,6 @@ pycrypto==2.6.1
 pycurl==7.43.0.5
 pyflakes==2.1.1
 Pygments==2.5.2
-pygpu==0.7.6
 PyJWT==1.7.1
 pylint==2.4.4
 pyodbc===4.0.0-unsupported
