@@ -6,12 +6,15 @@ import os
 sys.path.insert(1, '/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Face Detection/')
 import image_embedding
 
-# sys.path.insert(1, '/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Face Detection/')
-# import image_embedding
+sys.path.insert(1, '/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Face Matching/')
+import db_extraction
 
 app = Flask(__name__,template_folder='')
 
-app.config["IMAGE_UPLOADS"] = "/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Dataset/Images"
+app.config["IMAGE_UPLOADS"] = "/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/"
+
+
+
 
 app.static_folder = 'static'
 
@@ -28,9 +31,8 @@ def capture():
         image.save(os.path.join(app.config["IMAGE_UPLOADS"], 'IM11.jpg')) 
         path='/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Dataset/Images'
         embeddings=image_embedding.generate_image_encoding(path)
-        
-        
-
+        k=db_extraction.get_student(embeddings)
+        print(k) 
     return render_template('mobile.html')
 
 
