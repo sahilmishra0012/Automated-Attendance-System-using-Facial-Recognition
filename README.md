@@ -1,6 +1,9 @@
 # Automated-Attendance-System-using-Facial-Recognition
 
-One Paragraph of project description goes here
+Automated-Attendance-System of face detection and recognition is to present face recognition in real time environment for educational institutes or an organization to see and mark the attendance of their students or employees on a daily basis to keep track of their presence.
+
+Why and How we are going to approach?
+Attendance management system is a necessary tool for taking attendance in any environment where attendance is critical. However, most of the existing approach are time consuming, intrusive and it require manual work from the users. This project is aimed at developing a less intrusive, cost effective and more efficient automated student attendance management system using face recognition that leverages on SAS cloud computing (CC) infrastructure. It takes attendance by using IP camera mounted in front of a classroom, to acquire images of the entire class. It detect the faces in the image and compares it with the enrolled faces in the database. On identification of a registered face on the acquired image collections, the attendance register is marked as present otherwise absent.
 
 ## Getting Started
 
@@ -10,25 +13,18 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
+The Python libraries needed for this project are in requirement.txt files. These libraries can be easily installed using pip over requirement.txt. 
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+To get all the necessary libraries install anaconda. Almost all the dependencies are available in the anaconda itself. 
 
-```
-Give the example
-```
+Download keras facenet model and their weights as they are alredy trained on billions of images for face recognition. This model will help in extracting the embedding of faces present in the images.
 
-And repeat
+Install OpenCV for python using folowing commands:
 
-```
-until finished
-```
 
 End with an example of getting some data out of the system or using it for a little demo
 
@@ -36,25 +32,15 @@ End with an example of getting some data out of the system or using it for a lit
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+face_detect_video.py file detects the faces captured from webcam.
+image_embedding.py file generates the embedding of faces in the images.
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
+
+The following code is deployed in the WebApp on using ngrok.
 
 ## Built With
 
