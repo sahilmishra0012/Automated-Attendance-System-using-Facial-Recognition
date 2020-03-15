@@ -28,7 +28,7 @@
     <img src="{{ url_for("static", filename="img/logo.png") }}">
     <div class="app">
         <h6>Tap below to snap your picture</h6>
-        <button onclick="capturePhotoWithFile()" method="post" action="">Capture</button> <br>
+        <button onclick="capturePhotoWithFile()" method="post" action="{{ url_for("capture") }}">Capture</button> <br>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="{{ url_for("static", filename="js/index.js") }}"></script>

@@ -10,9 +10,15 @@ app.static_folder = 'static'
 def index():
     return render_template('index.html')
 
-@app.route('/capture')
+@app.route('/capture', methods=['GET','POST'])
 def capture():
-    return render_template('index.html')
+    if request.method == 'POST':
+        print('Hello World')
+    #         image = request.form['Image']
+    #         get_image = cv2.imread(image,0)
+    #         return cv2.imshow(get_image)
+    # return render_template('index.html')
+
 
 
 
