@@ -1,7 +1,13 @@
 from flask import Flask, render_template, request,redirect
 from cv2 import cv2
-import os
+import sys
 
+import os
+sys.path.insert(1, '/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Face Detection/')
+import image_embedding
+
+# sys.path.insert(1, '/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Face Detection/')
+# import image_embedding
 
 app = Flask(__name__,template_folder='')
 
@@ -20,6 +26,10 @@ def capture():
         print(request.files['image'])
         image = request.files["image"]
         image.save(os.path.join(app.config["IMAGE_UPLOADS"], 'IM11.jpg')) 
+        path='/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Dataset/Images'
+        embeddings=image_embedding.generate_image_encoding(path)
+        
+        
 
     return render_template('mobile.html')
 
