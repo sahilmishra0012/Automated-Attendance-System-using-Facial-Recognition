@@ -22,8 +22,6 @@ def generate_image_encoding(path):
     image_dirpath = image_dir_basepath
     image_filepaths = [os.path.join(image_dirpath, f) for f in os.listdir(image_dirpath)]
     image_filepaths.append(image_filepaths[0])
-    print(image_filepaths)
     
     embs = image_preprocess.calc_embs(image_filepaths,model)
-    print(embs[0])
     return embs[0]

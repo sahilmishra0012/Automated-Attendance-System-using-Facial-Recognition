@@ -45,6 +45,6 @@ def calc_embs(filepaths,model,margin=10,batch_size=1):
     pd = []
     for start in range(0, len(aligned_images), batch_size):
         pd.append(model.predict_on_batch(aligned_images[start:start+batch_size]))
-    embs = l2_normalize(np.concatenate(pd))
+    embs = np.concatenate(pd)
 
     return embs

@@ -28,11 +28,10 @@ def capture():
     if request.method == 'POST':
         print(request.files['image'])
         image = request.files["image"]
-        image.save(os.path.join(app.config["IMAGE_UPLOADS"], 'IM11.jpg')) 
+        image.save(os.path.join(app.config["IMAGE_UPLOADS"], 'IM12.jpg')) 
         path='/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Dataset/Images'
         embeddings=image_embedding.generate_image_encoding(path)
         k=db_extraction.get_student(embeddings)
-        print(k) 
     return render_template('mobile.html')
 
 
