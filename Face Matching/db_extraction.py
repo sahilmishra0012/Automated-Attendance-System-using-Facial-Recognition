@@ -16,7 +16,6 @@ def get_student(emb):
         p[-1]=p[-1][:-1]
         k=[float(i) for i in p]
         dist=calc_dist(k,emb)
-        print(i[1],i[0],dist)
         if dist<1:
             return i[0],i[1]
     return 'Not Found','Not Found'
