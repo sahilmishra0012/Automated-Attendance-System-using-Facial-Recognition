@@ -50,9 +50,22 @@ $ pip install opencv-python
         --face_detect_video.py
             (Script to detect faces in webcam videos)
         --face_detect.py
-            ()
-```face_detect_video.py``` file detects the faces captured from webcam.
-```image_embedding.py``` file generates the embedding of faces in the images.
+            (Script contains functions to extract faces from images)
+        --haarcascade_frontalface_default.xml
+            (OpenCV Classifier to extract faces)
+        --image_preprocess.py
+            (Script to make image ready for embedding extraction)
+        --image_embedding.py
+            (Script to extract embedding vectors of faces in images)
+    --Face Matching
+        --similarity.py
+            (Contains functions to get similarity between faces in images)
+        --db_extraction.py
+            (Script to fetch students from database and mark the attendance)
+    --README.md
+        (README for the following project)
+    --requirements.txt
+        (Consists of python dependecies required to run the code)
 
 
 ## Deployment
