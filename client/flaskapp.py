@@ -32,6 +32,10 @@ def capture():
         path='/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Dataset/Images'
         embeddings=image_embedding.generate_image_encoding(path)
         k=db_extraction.get_student(embeddings)
+        if k==('Not Found','Not Found'):
+            return render_template('mobile.html')
+        else:
+            return render_template('mobile.html')
     return render_template('mobile.html')
 
 
