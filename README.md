@@ -70,25 +70,9 @@ $ pip install opencv-python
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
-
-The following code is deployed in the WebApp on using ngrok.
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+The following code is deployed on the localhost port number 8080 and is made public using ngrok to access it remotely on the smartphones for easier handling.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Sahil Mishra** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
