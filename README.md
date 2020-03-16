@@ -11,7 +11,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-The Python libraries needed for this project are in requirement.txt files. These libraries can be easily installed using pip over requirement.txt. 
+The Python libraries needed for this project are in requirement.txt files. These libraries can be easily installed using pip over requirement.txt.
+
+Apart from these, MySql needs to be installed in the system as it is used to store database of students.
 
 ### Installing
 
@@ -24,6 +26,8 @@ Install [OpenCV](https://pypi.org/project/opencv-python/) for python using folow
 ```
 $ pip install opencv-python
 ```
+
+To install MySql in Linux Systems, go through the following [link](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04).
 
 ## Directory Structure
 
