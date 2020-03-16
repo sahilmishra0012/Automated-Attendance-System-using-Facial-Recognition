@@ -35,12 +35,13 @@ def capture():
         if k==('Not Found','Not Found'):
             return render_template('mobile.html')
         else:
-            return render_template('mobile.html')
-    return render_template('mobile.html')
+            data={'name':k[1],'roll':k[0]}
+            return render_template('present.html',data=data)
+    return render_template('present.html')
 
 
 
 
 
 if __name__ == '__main__':
-    app.run(host = 'localhost', port = 8080, debug=True)
+    app.run(host = 'localhost', port = 3000, debug=True)
