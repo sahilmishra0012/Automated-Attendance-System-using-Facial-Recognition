@@ -62,11 +62,20 @@ $ pip install opencv-python
             (Contains functions to get similarity between faces in images)
         --db_extraction.py
             (Script to fetch students from database and mark the attendance)
+    --Test Screenshots
+        --Test*
+            --1.jpg
+                (First Page/Click on Capture)
+            --2.jpg
+                (Capture Image)
+            --3.jpg
+                (Submit Image)
+            --4.jpg
+                (Ouput Printed)
     --README.md
         (README for the following project)
     --requirements.txt
         (Consists of python dependecies required to run the code)
-
 
 ## Deployment
 
