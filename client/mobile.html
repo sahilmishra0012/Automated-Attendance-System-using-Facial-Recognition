@@ -79,6 +79,9 @@ input[type="file"] {
 .but:hover{
     background-color: rgb(216, 139, 16);
 }
+.lab{
+    background-color: rgb(2, 138, 13) !important ;
+}
 .tick{
     width: 1rem;
 }
@@ -134,10 +137,16 @@ input[type="file"] {
     <div class="app">
         <h6>Tap below to snap your picture</h6>
         <form method="post" action="{{ url_for("capture") }}" enctype="multipart/form-data">
-        <label class="but">
+        <label class="but lab">
             <input type="file" name="image" accept="image/*" capture="user">
             Capture
         </label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <button type="submit" class="but">Submit</button>
         </form>
     </div>
