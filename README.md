@@ -2,7 +2,7 @@
 
 Automated Attendance System leverages the power of face detection and recognition for institution and organizations to see and mark the attendance of their students or employees on a daily basis and keep track of their presence.
 
-Why and How we are going to approach?
+Why and How we are going to approach?   
 Attendance Management System is a necessary tool for marking attendance in any environment where attendance is critical. However, most of the existing approach are time consuming, intrusive and it require manual work from the users. This project is aimed at developing a less intrusive, cost effective and more efficient automated student attendance management system using face recognition that leverages on SAS cloud computing (CC) infrastructure. It takes attendance by using the smartphone camera to acquire images of people. It detect the faces in the image and compares it with the images of enrolled people in the database. On identification of a registered face on the acquired image collections, the attendance register is marked as present otherwise absent.
 
 ## Getting Started
