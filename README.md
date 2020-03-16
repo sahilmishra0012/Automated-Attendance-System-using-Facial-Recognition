@@ -63,7 +63,7 @@ $ pip install opencv-python
         --db_extraction.py
             (Script to fetch students from database and mark the attendance)
     --Test Screenshots
-        --Test*
+        --Test(*)
             --1.jpg
                 (First Page/Click on Capture)
             --2.jpg
