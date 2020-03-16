@@ -74,5 +74,6 @@ The following code is deployed on the localhost port number 8080 and is made pub
 
 ## Authors
 
-* **Sahil Mishra** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
+* [**Sahil Mishra**](https://github.com/sahilmishra0012)
+* [**Shubham Negi**](https://github.com/negishubham3503)
+* [**Abhishek Singh**](https://github.com/abhishekaashu)
