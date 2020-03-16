@@ -31,16 +31,26 @@ $ pip install opencv-python
         --static
             --img
                 (Images for the Front-End)
-            --flaskapp.py
-                (Flask Application for App Deployment)
-            --mobile.html
-                (First Page of Web App)
-            --notfound.html
-                (Rendered when Student is not in database)
-            --present.html
-                (Rendered when Student is marked present)
-            --ngrok
-                (Tunnelling App to run localhost public IP)
+        --flaskapp.py
+            (Flask Application for App Deployment)
+        --mobile.html
+            (First Page of Web App)
+        --notfound.html
+            (Rendered when Student is not in database)
+        --present.html
+            (Rendered when Student is marked present)
+        --ngrok
+            (Tunnelling App to run localhost public IP)
+    --Create Datbase
+        --create_database.py
+            (Script to save students' data in database)
+    --Dataset/Images
+        (Saves the captured image temporarily for face recognition)
+    --Face Detection
+        --face_detect_video.py
+            (Script to detect faces in webcam videos)
+        --face_detect.py
+            ()
 ```face_detect_video.py``` file detects the faces captured from webcam.
 ```image_embedding.py``` file generates the embedding of faces in the images.
 
