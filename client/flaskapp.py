@@ -39,9 +39,5 @@ def capture():
             return render_template('present.html',data=data)
     return render_template('present.html')
 
-
-
-
-
 if __name__ == '__main__':
     app.run(host = 'localhost', port = 8080, debug=True)
