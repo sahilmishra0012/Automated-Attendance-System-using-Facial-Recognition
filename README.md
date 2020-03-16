@@ -28,21 +28,19 @@ $ pip install opencv-python
 ## Directory Structure
 
     --client
-
         --static
-
             --img
                 (Images for the Front-End)
             --flaskapp.py
-                ()
+                (Flask Application for App Deployment)
             --mobile.html
-                ()
+                (First Page of Web App)
             --notfound.html
-                ()
+                (Rendered when Student is not in database)
             --present.html
-                ()
+                (Rendered when Student is marked present)
             --ngrok
-                ()
+                (Tunnelling App to run localhost public IP)
 ```face_detect_video.py``` file detects the faces captured from webcam.
 ```image_embedding.py``` file generates the embedding of faces in the images.
 
