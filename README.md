@@ -68,7 +68,7 @@ $ pip install opencv-python
         (Consists of python dependecies required to run the code)
 
 
-## Deployment
+## Deploymen
 
 The following code is deployed on the ```https://localhost:8080``` and is made public on a URL using ```ngrok``` to access it remotely on the smartphones for easier handling.
 
