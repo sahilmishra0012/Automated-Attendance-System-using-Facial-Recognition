@@ -17,7 +17,6 @@ roll=input('Enter Roll Number')
 stud_name=input('Enter Name')
 
 query="INSERT into students values(\'"+str(roll)+"\',\'"+str(stud_name)+"\',\'"+str(embeddings)+"\')"
-# query="SELECT * FROM students"
 mycursor.execute(query)
 mydb.commit()
 

@@ -37,14 +37,12 @@ def load_and_align_images(filepaths, margin):
     for filepath in filepaths:
         img=face_detect.extract_face(filepath,160,margin)
         aligned_images.append(img)
-            
     return np.array(aligned_images)
 
 def calc_embs(filepaths,model,margin=10,batch_size=1):
-    aligned_images = (load_and_align_images(filepaths, margin))
+    aligned_images = prewhiten(load_and_align_images(filepaths, margin))
     pd = []
     for start in range(0, len(aligned_images), batch_size):
         pd.append(model.predict_on_batch(aligned_images[start:start+batch_size]))
-    embs = np.concatenate(pd)
-
+    embs = l2_normalize(np.concatenate(pd))
     return embs
