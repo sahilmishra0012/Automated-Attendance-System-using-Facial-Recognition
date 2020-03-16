@@ -25,9 +25,11 @@ Install [OpenCV](https://pypi.org/project/opencv-python/) for python using folow
 $ pip install opencv-python
 ```
 
-## Running the tests
+## Directory Structure
 
-
+--client
+    --static
+        --img
 ```face_detect_video.py``` file detects the faces captured from webcam.
 ```image_embedding.py``` file generates the embedding of faces in the images.
 
