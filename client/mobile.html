@@ -2,22 +2,27 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
     <title>Attendance</title>
 </head>
 
-<body style="text-align: center;">
+<body>
     <div class="heading">
         <h1>Call your Attendance</h1>
     </div>
-    <img src="https://toppng.com/uploads/preview/attendance-student-icon-student-attendance-icon-11553429021zcrc3jrvvv.png" style="width: 250px; height: 300px;">
+    <img src="img/logo.png" style="height: 250px;">
     <div class="app">
         <h6>Tap below to snap your picture</h6>
-        <form method="post" action="{{ url_for("capture") }}" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" capture="user" >
-        <button type="submit" >Submit</button>
-        </form>
+        <label class="but">
+            <input type="file" name="image" accept="image/*" capture="user">
+            Capture
+        </label>
+        
     </div>
+
 </body>
 
 </html>
