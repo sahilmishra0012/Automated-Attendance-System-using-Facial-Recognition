@@ -81,6 +81,10 @@ $ pip install opencv-python
 
 The following code is deployed on the ```https://localhost:8080``` and is made public on a URL using ```ngrok``` to access it remotely on the smartphones for easier handling.
 
+## Future Developments
+
+We are planning to add a barcode integration to the application. The barcode of a particular professor will be displayed on the projector which will change every 10 seconds to avoid proxy attendance. The student needs to scan the barcode and capture the photo within 10 seconds or the barcode will expire. This will prevent other students from capturing the photo of barcode and sending it to their colleagues to mark the attendance.
+
 ## Authors
 
 * [**Sahil Mishra**](https://github.com/sahilmishra0012)
