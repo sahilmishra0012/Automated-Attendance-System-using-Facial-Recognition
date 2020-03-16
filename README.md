@@ -21,7 +21,9 @@ Download [Keras-FaceNet](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJH
 
 Install [OpenCV](https://pypi.org/project/opencv-python/) for python using folowing command:
 
-<pip install opencv-python>
+```
+$ pip install opencv-python
+```
 
 ## Running the tests
 
