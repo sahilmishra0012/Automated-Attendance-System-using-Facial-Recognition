@@ -70,7 +70,7 @@ $ pip install opencv-python
 
 ## Deployment
 
-The following code is deployed on the localhost port number 8080 and is made public using ngrok to access it remotely on the smartphones for easier handling.
+The following code is deployed on the ```https://localhost:8080``` and is made public using ```ngrok``` to access it remotely on the smartphones for easier handling.
 
 ## Authors
 
