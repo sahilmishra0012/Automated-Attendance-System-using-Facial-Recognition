@@ -11,7 +11,7 @@ import db_extraction
 
 app = Flask(__name__,template_folder='')
 
-app.config["IMAGE_UPLOADS"] = "/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/"
+app.config["IMAGE_UPLOADS"] = "/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Dataset/Images"
 
 
 
@@ -33,7 +33,7 @@ def capture():
         embeddings=image_embedding.generate_image_encoding(path)
         k=db_extraction.get_student(embeddings)
         if k==('Not Found','Not Found'):
-            return render_template('mobile.html')
+            return render_template('notfound.html')
         else:
             data={'name':k[1],'roll':k[0]}
             return render_template('present.html',data=data)
@@ -44,4 +44,4 @@ def capture():
 
 
 if __name__ == '__main__':
-    app.run(host = 'localhost', port = 3000, debug=True)
+    app.run(host = 'localhost', port = 8080, debug=True)
