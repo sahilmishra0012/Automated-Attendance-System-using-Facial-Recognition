@@ -4,7 +4,7 @@ from similarity import calc_dist
 
 def get_student(emb):
 
-    mydb = mysql.connector.connect(user='samkiller007', password='Incorrect@11',host='localhost',database='attendance')
+    mydb = mysql.connector.connect(user='samkiller007', password='HeloWord',host='localhost',database='attendance')
 
     mycursor = mydb.cursor()
 

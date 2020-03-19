@@ -4,7 +4,7 @@ import numpy as np
 sys.path.insert(1, '/home/samkiller007/Downloads/Projects/Machine Learning/Automated Attendance System/Face Detection/')
 import image_embedding
 
-mydb = mysql.connector.connect(user='samkiller007', password='Incorrect@11',host='localhost',database='attendance')
+mydb = mysql.connector.connect(user='samkiller007', password='HeloWorld',host='localhost',database='attendance')
 
 mycursor = mydb.cursor()
 
